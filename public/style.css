@@ -1,40 +1,86 @@
-.select {
-  padding: 12px 18px;
-  border-radius: 12px;
-  border: 1px solid #cbd5e1;
-  background: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter-bar label {
+  font-size: 18px;
+}
+
+select {
+  padding: 14px 18px;
+  width: 320px;
   font-size: 16px;
-  min-width: 220px;
+  border-radius: 10px;
+  border: 2px solid #e0e6ef;
+  outline: none;
 }
 
-.product-card {
-  background: white;
-  border: 1px solid #e2e8f0;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 2px solid #e8edf4;
   border-radius: 16px;
-  padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 28px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+.card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-.category-badge {
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tag {
   display: inline-block;
-  margin-top: 14px;
-  padding: 6px 16px;
-  border-radius: 9999px;
+  padding: 8px 18px;
+  border-radius: 999px;
   font-size: 14px;
-  font-weight: 500;
+  color: #fff;
+  text-transform: lowercase;
 }
 
 .electronics {
-  background-color: #3b82f6;
-  color: white;
+  background: #3b6df6;
 }
 
 .clothing {
-  background-color: #93c5fd;
-  color: white;
+  background: #9fc3ff;
+  color: #ffffff;
 }

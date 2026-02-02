@@ -3,35 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <title>Product Filter</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body>
 
-  <div class="max-w-5xl mx-auto p-6">
-    <h1 class="text-4xl font-bold mb-8">Product Filter</h1>
+  <div class="container">
+    <h1>Product Filter</h1>
 
-    <!-- Filter -->
-    <div class="flex items-center gap-4 mb-8">
-      <label class="text-lg font-medium">Filter by:</label>
-
-      <select id="categorySelect" class="select">
+    <div class="filter-bar">
+      <label>Filter by:</label>
+      <select id="categoryFilter">
         <option value="all">All Products</option>
         <option value="electronics">Electronics</option>
         <option value="clothing">Clothing</option>
       </select>
     </div>
 
-    <!-- Products -->
-    <div
-      id="productGrid"
-      class="grid grid-cols-1 md:grid-cols-2 gap-8"
-    ></div>
+    <div class="products" id="productList"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="style.js"></script>
 </body>
 </html>
